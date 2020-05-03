@@ -1,0 +1,183 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LaTeX Resume Template
+% https://github.com/rohit-gohri/resume-template
+%
+% NOTE:
+% This template requires the resume.cls file to be in the same directory as the .tex file.
+% The resume.cls file provides the resume style used for structuring the document.
+% 
+% Version: v1.0.0 (2020/05/04)
+% By Rohit Gohri (https://rohit.page)
+% 
+% 
+% Based On:
+% Medium Length Professional CV
+% 
+% Downloaded from:
+% http://www.LaTeXTemplates.com
+% 
+% Trey Hunner (http://www.treyhunner.com/)
+% Version 2.0 (8/5/13)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[UKenglish]{resume} % Use the custom resume.cls style
+
+%----------------------------------------------------------------------------------------
+%	VARIABLES
+%----------------------------------------------------------------------------------------
+
+\name{ John Doe }
+\setCity{ New Delhi, India }
+\setEmail{ email@example.com }
+\setPhoneNum{ +91-9999999999 }
+\setLinkedIn{ john-doe }
+\setGithub{ john-doe }
+
+\setWebsite{ example.com }
+\setPdfKeywords { resume, cv, hiring, template }
+\setPdfSubject { John Doe's Resume }
+
+% Override any variables/commands through a private file
+\InputIfFileExists{\jobname.tmp}{}{}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{ Education }
+
+    \rSubsectionHeading
+        {Abc Def Institute of Pqr, \nem University of Xyz}
+        { \fmtdate{8}{2013} - \fmtdate{6}{2017} }
+        {\normalfont B.X. in Abcdef, CGPA: 7.89}
+        {Xyz, XX}
+    % TODO: Add courses example
+    % \\ {\bfseries Courses}: Abc12345, Def67890 \smallskip
+
+    \rSubsectionHeading
+        {Pqr Academy, \nem C.D.E.F.}
+        { \fmtdate{4}{2011} - \fmtdate{4}{2013} }
+        {\normalfont ABCDEF, Percentage: 78.9\%}
+        {Xyz, XX}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Skills}
+
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+
+        Languages \& Frameworks     & HTML, CSS, Javascript, Typescript, NodeJS \\
+        Software \& Tools           & PM2, Nginx, Linux, Windows, SSH, Git \\
+        Other                       & Microsoft Word, Microsoft PowerPoint, Adobe Photoshop  \\
+    \end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Work Experience}
+
+    \begin{rSubsection}
+        {\href{https://example.com}{Example.com}}
+        { \fmtdate{6}{2017} - \fmtdate{10}{2019} }
+        {Software Developer}
+        {Xyz, XX}
+
+        \item Setup and made dashboards to monitor and visualize various metrics, and set alerts
+        \item Created REST APIs in backend using Express and MongoDB
+        \item Added schema validation using OpenAPI Spec
+        \item Added automated API tests using MochaJS
+
+    \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%    Projects
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Projects}
+
+    \begin{rSubsection}
+        {\href{https://example.com/project}{Project Website}, {\nem Company}}
+        { \fmtdate{1}{2016} - \fmtdate{3}{2016} }
+        {}{}
+        \item Led a team to design and develop the website using \textbf{NodeJS} and MySQL
+        \item Created user management feature, including full auth flow
+        \item Deployed site on AWS, using EC2 and RDS
+    \end{rSubsection}
+
+    % NOTE: Wrapping in \draft{ } hides the content in the final PDF
+    \draft{
+        \begin{rSubsection}
+            {\href{https://example.com/project}{Draft Project}, {\nem Invisible}}
+            { \fmtdate{1}{2016} - \fmtdate{3}{2016} }
+            {}{}
+
+            \item \href{https://github.com/rohit-gohri/resume-template}{\textbf{Resume Template}}: Built in Latex with automated builds using CI/CD
+        \end{rSubsection}
+    }
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	OTHER SECTIONS
+%----------------------------------------------------------------------------------------
+
+% Non bullet points
+\begin{rSection}{Activities and Achievements} \itemsep -2pt
+    \item Most Innovative Idea, Project Website Competition, 2013
+    \item Awarded 1\textsuperscript{st} Prize, Design Competition, 2014
+    \item Hosted a workshop on AWS attended by 100+ students, 2015
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Extra-Curricular} \itemsep -3pt
+    \begin{rSubsection}
+        {\href{http://example.com/society/}{Society - College}}
+        { \fmtdate{2}{2014} - \fmtdate{6}{2017} }
+        {}{}
+
+        \item Redid the website using Wordpress and created a custom theme
+        \item Increased the site's traffic by 2x
+
+    \end{rSubsection}
+
+    %------------------------------------------------
+
+    \begin{rSubsection}
+        {B99, {\normalfont \em Member}}
+        { \fmtdate{1}{2014} - \fmtdate{6}{2015} }
+        {}{}
+        \item Winner, Halloween Competition 2014
+        \item Hosted the 2015 Halloween Competition with 100+ attendees
+    \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+% Tabular data
+\begin{rSection}{Relevant Courses}
+    \itab{\textbf{Core Courses}} \tab{}  \tab{\textbf{Other Courses}}
+    \\ \itab{ABC} \tab{}  \tab{System Organisation}
+    \\ \itab{PQR} \tab{}  \tab{IOME}
+    \\ \itab{DBMS} \tab{}  \tab{Some Subject}
+\end{rSection}
+
+\end{document}

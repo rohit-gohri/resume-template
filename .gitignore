@@ -1,0 +1,5 @@
+dist
+*.zip
+*.log
+*.tmp
+*.pdf
