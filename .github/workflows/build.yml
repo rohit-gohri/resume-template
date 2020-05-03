@@ -18,7 +18,7 @@ jobs:
         root_file: |
           resume.tex
         args: |
-          -pdf -interaction=nonstopmode -halt-on-error -jobname Preview
+          -pdf -interaction=nonstopmode -halt-on-error -jobname=Preview
 
     - name: Upload preview artifacts
       uses: actions/upload-artifact@v1
