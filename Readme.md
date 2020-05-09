@@ -18,7 +18,7 @@ Automatically built resume with LaTeX. The structure for sections is defined in 
 - [Useful Packages](https://tex.stackexchange.com/questions/553/what-packages-do-people-load-by-default-in-latex)
 - [Overleaf](https://www.overleaf.com/): Online Editor
 - [Original Template](https://www.overleaf.com/latex/templates/cv-for-freshers/jkpwvnrdrxpm)
-- Automatic [builds](https://cloud.drone.io/rohit-gohri/resume) with [Drone.io](https://cloud.drone.io) on publishing tag
+- Automatic [builds](https://github.com/rohit-gohri/resume-template/actions) with Github Actions on every push and automatic [releases](https://github.com/rohit-gohri/resume-template/releases) on publishing tags
 
 ## Using as a template
 
