@@ -1,6 +1,7 @@
 # Resume
 
 [![Build Status](https://github.com/rohit-gohri/resume-template/workflows/Preview/badge.svg?branch=master)](https://github.com/rohit-gohri/resume-template/actions?query=branch%3Amaster)
+![Release](https://github.com/rohit-gohri/resume-template/workflows/Release/badge.svg)
 
 Automatically built resume with LaTeX. The structure for sections is defined in `resume.cls` file. While the content is in `resume.tex`.
 
@@ -10,6 +11,7 @@ Automatically built resume with LaTeX. The structure for sections is defined in 
 
 ### [Download latest version](https://github.com/rohit-gohri/resume-template/releases/latest/download/Preview.pdf)
 
+### Blog Post: https://rohit.page/blog/projects/ci-cd-for-your-resume-wth-this-github-template/
 
 ## Resources
 
@@ -22,7 +24,7 @@ Automatically built resume with LaTeX. The structure for sections is defined in 
 
 ## Using as a template
 
-Use the green __"Use this template"__ button to create a new repository with this repository's files as a template. There are two files only: 
+Use the green **"Use this template"** button to create a new repository with this repository's files as a template. There are two files only:
 
 - `resume.cls`: Defines the structure and all the custom commands. No need to modify this.
 - `resume.tex`: This is the file where all your content for the resume goes. Your name, email, links, etc. are defined through commands. Feel free to move things around and change them.
@@ -66,7 +68,6 @@ Use the [`tianon/latex`](https://hub.docker.com/r/tianon/latex/) image.
 mkdir dist
 docker run --rm -v `pwd`:`pwd` -w `pwd` tianon/latex pdflatex -output-directory dist -interaction errorstopmode -halt-on-error resume.tex
 ```
-
 
 ## Included Commands/Environments
 
@@ -134,6 +135,7 @@ Command to print subsection heading. Output depends on number of non empty argum
     { \fmtdate{8}{2013} - \fmtdate{6}{2017} }
     {}{}
 ```
+
 ![2ParamsPreview](./docs/2ParamSubSectionHeading.PNG)
 
 ```tex
