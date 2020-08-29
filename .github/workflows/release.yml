@@ -3,40 +3,34 @@ name: Release
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+      - uses: actions/checkout@v1
 
-    - name: Generate PDF
-      uses: xu-cheng/latex-action@master
-      with:
-        root_file: |
-          resume.tex
-        args: |
-          -pdf -interaction=nonstopmode -halt-on-error -jobname=Preview
+      - name: Generate PDF
+        uses: xu-cheng/latex-action@master
+        with:
+          root_file: |
+            resume.tex
+          args: |
+            -pdf -interaction=nonstopmode -halt-on-error -jobname=Preview
 
-    - name: Create Release
-      id: create_release
-      uses: actions/create-release@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
-        draft: false
-        prerelease: false
+      - name: Upload preview artifacts
+        uses: actions/upload-artifact@v1
+        with:
+          name: resume-preview
+          path: Preview.pdf
 
-    - name: Upload Release Asset
-      id: upload-release-asset 
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./Preview.pdf
-        asset_name: Preview.pdf
-        asset_content_type: application/pdf
+      - name: Create Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: Preview.pdf
+          draft: false
+          prerelease: false
