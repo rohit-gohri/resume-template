@@ -11,7 +11,7 @@ Automatically built resume with LaTeX. The structure for sections is defined in 
 
 ### [Download latest version](https://github.com/rohit-gohri/resume-template/releases/latest/download/Preview.pdf)
 
-### Blog Post: https://rohit.page/blog/projects/ci-cd-for-your-resume-wth-this-github-template/
+### Blog Post: [CI/CD for your Resume](https://rohit.page/blog/projects/ci-cd-for-your-resume-wth-this-github-template/?utm_source=github&utm_medium=repo&utm_campaign=hf)
 
 ## Resources
 
