@@ -3,7 +3,7 @@ name: Preview
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - resume.tex
       - resume.cls
