@@ -7,13 +7,17 @@ Automatically built resume with LaTeX. The structure for sections is defined in 
 
 > Based on the [CV For Freshers](https://www.overleaf.com/latex/templates/cv-for-freshers/jkpwvnrdrxpm) template on Overleaf.
 
-### [Preview latest version](https://docs.google.com/viewer?url=https://github.com/rohit-gohri/resume-template/releases/latest/download/Preview.pdf)
+#### [Preview latest version](https://docs.google.com/viewer?url=https://github.com/rohit-gohri/resume-template/releases/latest/download/Preview.pdf)
 
-### [Download latest version](https://github.com/rohit-gohri/resume-template/releases/latest/download/Preview.pdf)
+#### [Download latest version](https://github.com/rohit-gohri/resume-template/releases/latest/download/Preview.pdf)
+
+#### [My Resume](https://github.com/rohit-gohri/resume)
+
+## Resources
 
 ### Blog Post: [CI/CD for your Resume](https://rohit.page/blog/projects/ci-cd-for-your-resume-wth-this-github-template/?utm_source=github&utm_medium=repo&utm_campaign=hf)
 
-## Resources
+### Links
 
 - [Begin Latex](https://github.com/luong-komorebi/Begin-Latex-in-minutes)
 - [Latex Advice](https://github.com/dspinellis/latex-advice)
